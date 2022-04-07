@@ -20,11 +20,6 @@ export class CreateUserDto {
   @ApiProperty({ default: 'Dutra' })
   lastName: string;
 
-  @IsDateString({ message: 'Este campo precisa ser do tipo data' })
-  @IsNotEmpty({ message: 'Campo Obrigatório' })
-  @ApiProperty({ default: '1980-11-02T00:00:00.000Z' })
-  birthdate: Date;
-
   @IsString({ message: 'Campo Obrigatório' })
   @IsNotEmpty({ message: 'Campo Obrigatório' })
   @IsEmail({ message: 'O formato não é compatível com de um e-mail.' })

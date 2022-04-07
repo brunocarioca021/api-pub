@@ -22,12 +22,6 @@ export class UpdateUserDto {
   @ApiProperty({ default: 'Breno' })
   lastName: string;
 
-  @IsDateString({ message: 'Este campo precisa ser do tipo data' })
-  @IsNotEmpty({ message: 'Campo Obrigatório' })
-  @IsOptional({ message: 'Este campo é opcional.' })
-  @ApiProperty({ default: '2019-07-31T00:00:00.000Z' })
-  birthdate: Date;
-
   @IsString({ message: 'Campo Obrigatório' })
   @IsNotEmpty({ message: 'Campo Obrigatório' })
   @IsEmail({ message: 'O formato não é compatível com de um e-mail.' })
