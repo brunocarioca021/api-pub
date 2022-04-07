@@ -5,12 +5,12 @@ export class LoginInputDto {
   @IsString({ message: 'Campo Obrigatório' })
   @IsNotEmpty({ message: 'Campo Obrigatório' })
   @IsEmail({ message: ' Campo Obrigatório para e-mail.' })
-  @ApiProperty({ default: 'pub@pubblueapi.com' })
+  @ApiProperty({ default: '' })
   email: string;
 
   @IsString({ message: 'Campo Obrigatório' })
   @IsNotEmpty({ message: 'Campo Obrigatório' })
   @MinLength(7, { message: 'Campos inválidas' })
-  @ApiProperty({ default: '1234567' })
+  @ApiProperty({ default: '' })
   password: string;
 }
